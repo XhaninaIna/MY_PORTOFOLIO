@@ -1,0 +1,94 @@
+.projects {
+  margin-top: 50px;
+}
+.projects > p {
+  font-size: 35px;
+  text-align: center;
+  color: var(--brownBold);
+  text-decoration: underline;
+}
+.myprojects {
+  margin: 50px 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 80px;
+}
+/* FILTER BUTTON */
+.filter_buttons {
+  margin-bottom: 15px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.filter_btn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--brownBold);
+  color: #fff;
+  cursor: pointer;
+}
+.filter_btn:hover {
+  background-color: var(--brown);
+  color: black;
+}
+.box {
+  box-shadow: 5px 10px 5px 5px var(--brown);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.box img {
+  width: 100%;
+}
+.box .title {
+  font-weight: 600;
+}
+.box > p {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.box > a {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--brownBold);
+  font-weight: 600;
+}
+.box > a:hover {
+  background-color: var(--brownBold);
+  border-radius: 30px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .myprojects {
+    margin: 30px 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .projects > p {
+    font-size: 30px;
+  }
+  .box {
+    box-shadow: 3px 6px 3px 3px var(--brown);
+  }
+
+  .box > p {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .box > a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .box > a:hover {
+    margin-bottom: 20px;
+  }
+}
